@@ -1,6 +1,13 @@
 package lab112;
 
 public class User {
+    public final static int serialVersionUID = 1;
+
+    private int id;
+    private int name;
+    private int lastName;
+    private double weight;
+
     public User(int id, int name, int lastName, double weight) {
         this.id = id;
         this.name = name;
@@ -8,10 +15,7 @@ public class User {
         this.weight = weight;
     }
 
-    private int id;
-    private int name;
-    private int lastName;
-    private double weight;
+
 
     public int getId() {
         return id;
@@ -43,5 +47,16 @@ public class User {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+    public void print (){
+        System.out.println("helo");
+    }
+    @Override
+    public String toString() {
+        return
+                "id=" + id +
+                        ", name='" + name + '\'' +
+                        ", lastName='" + lastName + '\'' +
+                        ", weight=" + weight;
     }
 }

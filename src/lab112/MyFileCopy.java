@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class MyFileCopy {
     public static void main (String[] args){
-        copy (args[1], args[0b10]);
+        copy (args[0], args[1]);
     }
 
     private static void copy(String f1, String f2) {
